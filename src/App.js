@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import User from "./Components/user";
+//first letter of alias must be capital like User.
 
+// JSX
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div>
+    <h1>Users:</h1>
+    <br></br>
+    <User name="Mohammad Akib Khan" description="FSWD intern"/>
+    <User name="Palak Mundra" description="IMD intern"/>
+  </div>;
 }
 
 export default App;
+
+// Props - A data that is being passed from one component to another.
+// state - set of data that an indivisual component can holds.
